@@ -1,6 +1,6 @@
 require_relative '../chapter_01/1.1_unique_string'
 
-describe 'has_dups?' do
+describe :has_dups? do
   it 'returns false for an empty or one-element string' do
     expect(has_dups?('')).to be false
     expect(has_dups?('a')).to be false

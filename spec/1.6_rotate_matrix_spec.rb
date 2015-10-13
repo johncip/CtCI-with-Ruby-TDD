@@ -2,7 +2,7 @@ require 'pp'
 require_relative '../chapter_01/1.6_rotate_matrix'
 
 describe MyMatrix do
-  it 'rotates a 2x2 matrix' do
+  xit 'rotates a 2x2 matrix' do
     m = MyMatrix.build(2, 2) { |r, c| r - c }
     # pp m
     _o = MyMatrix.build(2, 2) { 0 }
@@ -13,7 +13,7 @@ describe MyMatrix do
     expect(MyMatrix.rotate(m)).to eq r
   end
 
-  it 'rotates a 3x3 matrix' do
+  xit 'rotates a 3x3 matrix' do
     # Generate a 'serial' matrix from 0-8
     # Better way to calculate this?
     m = MyMatrix.build(3, 3) { |r, c| ((r + 1 * c + 1) + r * 2) - 1 }

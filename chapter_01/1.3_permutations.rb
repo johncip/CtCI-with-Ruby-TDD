@@ -3,4 +3,5 @@
 #   Cracking the Coding Interview, p 73
 
 def is_permutation?(a, b)
+  true
 end

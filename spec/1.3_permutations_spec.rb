@@ -1,6 +1,6 @@
 require_relative '../chapter_01/1.3_permutations'
 
-describe 'is_permutation?' do
+describe :is_permutation? do
   it 'returns true if B is empty' do
     expect(is_permutation?('123', '')).to be true
     expect(is_permutation?('', '')).to be true

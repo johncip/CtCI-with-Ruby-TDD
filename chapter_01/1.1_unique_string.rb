@@ -7,18 +7,19 @@ def has_dups?(str)
   str.size != str.chars.uniq.size
 end
 
-# require 'set'
-#
-# def has_dups_set?(str)
-#   seen = Set.new
-#
-#   str.chars do |char|
-#     return true if seen.include?(char)
-#     seen << char
-#   end
-#
-#   return false
-# end
+require 'set'
+
+def has_dups_alt?(str)
+  # first attempt
+  seen = Set.new
+
+  str.chars do |char|
+    return true if seen.include?(char)
+    seen << char
+  end
+
+  return false
+end
 
 # If we can't use additional data structures, we can use a doubly-nested loop:
 # for each char at i, check each char at j = i+1 to len for equality: O(n^2).
